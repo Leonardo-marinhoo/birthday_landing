@@ -8,7 +8,7 @@ function _defineProperties(target, props) { for (var i = 0; i < props.length; i+
 
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
-var FlipDown = function () {
+export var FlipDown = function () {
   function FlipDown(uts) {
     var el = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "flipdown";
     var opt = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
