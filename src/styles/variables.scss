@@ -4,3 +4,6 @@ $bg-dark: rgb(18, 18, 18);
 $text-white: #fff;
 $text-secondary: rgb(146, 146, 146);
 $text-tertiary: rgb(132, 132, 132);
+
+$breakpoint-tablet: '(max-width: 1024px) and (min-width:641px)';
+$breakpoint-mobile: '(max-width: 640px)';

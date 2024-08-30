@@ -80,7 +80,7 @@
         }
     }
 
-    @media (max-width: 640px){
+    @media (variables.$breakpoint-mobile){
         padding: 1rem 0;
 
         .container{
@@ -112,4 +112,15 @@
             
         }
     }
+    @media(variables.$breakpoint-tablet){
+        &__cards{
+            gap: 3%;
+            justify-content: center;
+
+            &__item{
+                width: 47%;
+            }
+        }
+    }
+    
 }
