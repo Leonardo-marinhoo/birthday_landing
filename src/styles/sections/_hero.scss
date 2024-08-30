@@ -1,0 +1,113 @@
+@use "../variables.scss";
+
+.hero {
+  width: 100vw;
+  height: 90vh;
+  padding: 1rem 0;
+  padding-bottom: 4rem;
+
+  .container {
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+  }
+
+  img {
+    max-height: 90%;
+  }
+
+  .hero__info {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-width: 30%;
+    padding-top: 3rem;
+
+    &__text {
+      max-width: 100%;
+      font-family: "Poppins";
+      color: variables.$text-secondary;
+    }
+
+    &__title {
+      font-family: "Poppins";
+      font-weight: 300;
+      font-size: 6rem;
+      color: rgb(60, 60, 60);
+
+      &--bold {
+        font-weight: 800;
+        font-family: "Roboto";
+        font-size: 7rem;
+        color: variables.$bg-dark;
+      }
+
+    }
+    
+    &__buttons{
+        display: flex;
+        gap: 1rem;
+        margin-top: 2rem;
+
+        &--is-mobile{
+            display: none;
+        }
+
+        .button{
+            font-family: 'Poppins';
+            text-transform: uppercase;
+            padding: 0.4rem 1.9rem;
+            border:none;
+            border-radius: 8px;
+
+            &--primary{
+                background: black;
+                color: variables.$text-white;
+            }
+            &--secondary{
+                background:none;
+                border: 2px solid variables.$bg-dark;
+            }
+        }
+        
+      }
+  }
+
+  @media (max-width: 640px) {
+    height: auto;
+    padding: 0;
+    padding-bottom: 4rem;
+
+    .container {
+      padding: 1rem 1rem;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    img {
+      max-width: 70%;
+    }
+    .hero__info {
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      max-width: 100%;
+      width: 100%;
+      padding: 0;
+
+      &__title {
+        font-size: 3.5rem;
+        margin-right: 1rem;
+      }
+      &__text {
+        width: 100%;
+      }
+      &__buttons{
+        display: none;
+        &--is-mobile{
+            display: flex;
+        }
+      }
+    }
+  }
+}

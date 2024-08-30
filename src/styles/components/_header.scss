@@ -1,0 +1,81 @@
+@use "../variables.scss";
+
+.header {
+  width: 100vw;
+  height: 4rem;
+  background: variables.$bg-dark;
+  color: variables.$text-white;
+
+  .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 4rem;
+
+    .header__branding {
+      display: flex;
+      align-items: center;
+      gap: 0.2rem;
+
+      &__logo {
+        max-height: 100%;
+      }
+      h2 {
+        font-family: "Poppins";
+      }
+    }
+    .header__links {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      list-style: none;
+
+      &__item {
+        font-family: "Roboto";
+        text-transform: uppercase;
+        font-weight: 500;
+        padding: 0.3rem 0;
+        border-bottom: 4px solid transparent;
+
+        a {
+          text-decoration: none;
+          color: variables.$text-white;
+
+          &:visited {
+            color: variables.$text-white;
+            text-decoration: none;
+          }
+        }
+
+        &--is-active {
+          border-bottom: 4px solid variables.$text-white;
+        }
+      }
+    }
+  }
+  @media (max-width: 640px) {
+    .container {
+      padding: 1rem 1rem;
+
+      .header__branding {
+        &__logo {
+          max-height: 80%;
+        }
+        h2 {
+          font-size: 1rem;
+        }
+      }
+
+      .header__links {
+        gap: 0.5rem;
+
+        &__item {
+          a {
+            font-size: 0.7rem;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,12 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Leo Birthday</title>
-    <link rel="stylesheet" href="./styles/main.scss">
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="./styles/main.scss" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__branding">
+          <img class="header__branding__logo" src="./images/logo.png" alt="" />
+          <h2>ARTY.IO</h2>
+        </div>
+        <ul class="header__links">
+          <li class="header__links__item header__links__item--is-active">
+            <a href="#">Home</a>
+          </li>
+          <li class="header__links__item">
+            <a href="#">Details</a>
+          </li>
+          <li class="header__links__item">
+            <a href="#">Location</a>
+          </li>
+          <li class="header__links__item">
+            <a href="#">About Us</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="container">
+        <div class="hero__info">
+          <h1 class="hero__info__title">It's Leo</h1>
+          <h1 class="hero__info__title hero__info__title--bold">DAY</h1>
+          <p class="hero__info__text">
+            You’re invited to celebrate Leo Day with us! It’s a special day
+            because it’s Leo’s birthday, and we couldn’t be more excited to
+            share this important moment with you.
+          </p>
+          <div class="hero__info__buttons">
+            <button class="button button--primary">I'll be there</button>
+            <button class="button button--secondary">More info</button>
+          </div>
+        </div>
+        <img src="./images/Gift-amico.png" alt="" />
+        <div class="hero__info__buttons hero__info__buttons--is-mobile">
+          <button class="button button--primary">I'll be there</button>
+          <button class="button button--secondary">More info</button>
+        </div>
+      </div>
+    </section>
+    <section class="details">
+      <div class="container">
+        <ul class="details__cards">
+          <li class="details__cards__item">
+            <i class="fi fi-ss-garage-car icon"></i>
+            <span class="card-title">Parking</span>
+            <p class="card-text">
+              Convenient on-site parking available, complete with complimentary
+              electric vehicle charging stations for your convenience
+            </p>
+          </li>
+          <li class="details__cards__item">
+            <i class="fi fi-ss-family icon"></i>
+            <span class="card-title">Child Tutor</span>
+            <p class="card-text">
+              "Relax and enjoy the party while our dedicated child tutors ensure
+              your little ones are entertained and engaged with fun activities.
+              Your children will be in safe hands, allowing you to fully immerse
+              in the celebration."
+            </p>
+          </li>
+        </ul>
+        <div class="details__counter">
+          <div class="details__counter__info">
+            <h2 class="title">Looking forward to having You with Us!</h2>
+            <span class="subtitle">
+              Remember to arrive a bit early to capture some special moments
+              with the birthday celebrant.
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/main.js"></script>
+  </body>
 </html>
